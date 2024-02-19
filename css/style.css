@@ -1,0 +1,383 @@
+:root{
+    --main-text-color: rgb(60,86,149);
+    --main-bg-color: rgb(60,86,149);
+    --custom-grey-color: rgb(76, 76, 76);
+    --features-green-bg-color: rgb(106,164,68);
+    --features-blue-bg-color: rgb(98, 138, 229);
+    --light-grey-color: rgb(113, 113, 113);
+    --custom-blue: rgb(60, 86, 149);
+    --footer-bg-color: rgb(26, 26, 26);
+    --footer-text-color: rgb(144, 144, 144);
+}
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.text-blue{
+    color: var(--main-text-color);
+}
+
+.nav-icon{
+    border-radius: 50%;
+    color: white;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-bg-color);
+    font-size: 24px;
+}
+
+.nav-header .nav-content h4{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.nav-header .nav-content p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.nav-navbar .cta i{
+    color: white;
+    background-color: rgb(76, 76, 76);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.nav-navbar .navbar .nav-item .nav-link{
+    color: var(--custom-grey-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nav-navbar .navbar .nav-item .nav-link:hover{
+    color: var(--main-text-color);
+    font-weight: 500;
+}
+
+.nav-navbar .navbar .nav-item .active{
+    color: var(--main-text-color);
+}
+
+.header{
+    height: 85vh !important;
+    background-image: url('../assets/images/header-bg.png');
+    /* background-size: contain; */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.header h4{
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.header span{
+    font-weight: 600;
+}
+
+.header p{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--custom-grey-color);
+}
+
+.header .btn{
+    background-color: var(--main-bg-color);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.features{
+    color: white;
+}
+
+.features .feature-blue{
+    background-color: var(--features-blue-bg-color);    
+}
+
+.features .feature-green{
+    background-color: var(--features-green-bg-color);
+}
+
+.features i{
+    font-size: 34px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(25, 25, 25);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.features p{
+    margin-bottom: 0;
+}
+
+.services h2{
+    color: var(--custom-grey-color);
+    font-size: 34px;
+}
+
+.services p{
+    color: var(--light-grey-color);
+}
+
+.services h4{
+    color: var(--custom-grey-color);
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.service p{
+    margin-top: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Set it so that there is a white ciircle in like border and outside that there is another circle line */
+.services i{
+    color: white;
+    background-color: var(--main-bg-color);
+    padding: 15px;
+    font-size: 34px;
+    border: solid white 3px;
+    border-radius: 50%;
+}
+
+.services a{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.service a img{
+    height: 10px;
+}
+
+.services img{
+    height: 80%;
+}
+
+.numbers{
+    background-image: url('../assets/images/numbers-bg.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.numbers .number-box{
+    color: white;
+}
+
+.numbers .number-box i{
+    font-size: 32px;
+}
+
+.numbers .number-box h4{
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.numbers .number-box h4::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin: 10px auto;
+    background-color: white;
+}
+
+.numbers .number-box p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.works h4{
+    font-size: 36px;
+}
+
+.works p{
+    color: var(--light-grey-color);
+}
+
+.works h5{
+    color: var(--custom-grey-color);
+}
+
+.works .date{
+    color: var(--custom-blue);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.works button{
+    background-color: var(--custom-blue);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.works .treatment{
+    background-color: rgb(232, 232, 232);
+}
+
+.works .treatment.active{
+    background-color: var(--custom-blue);
+    color: white;
+}
+
+.works .treatment h5{
+    margin-bottom: 0;
+    color: var(--custom-grey-color);
+}
+
+.works .treatment.active h5{
+    color: white;
+}
+
+.works .treatment i{
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--custom-blue);
+}
+
+
+.works .treatment.active i{
+    background-color: white;
+    color: var(--custom-blue);
+}
+
+.gallery{
+    background-image: url('../assets/images/gallery-bg.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.gallery h2{
+    font-size: 34px;
+}
+
+.gallery p{
+    font-size: 14px;
+    color: rgb(241, 241, 241);
+}
+
+.team h5{
+    font-size: 20px;
+    color: var(--light-grey-color);
+    margin-top: 20px;
+}
+
+.team p{
+    color: rgb(112, 112, 112);
+}
+
+.team .row .row p{
+    color: rgb(148, 148, 148);
+    font-style: italic;
+    font-size: 14px;
+}
+
+.wrinkle{
+    background-color: rgb(82, 148, 37);
+    color: white;
+}
+
+.wrinkle h6{
+    font-size: 24px;
+}
+
+.wrinkle p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.wrinkle .btn{
+    color: var(--custom-blue);
+    background-color: white;
+    font-weight: 700;
+}
+
+.footer{
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+}
+
+.footer h4{
+    color: white;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.footer p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer i{
+    font-size: 32px;
+}
+
+.footer .socials a i{
+    font-size: 18px;
+    color: var(--footer-text-color);
+}
+
+.footer .links i{
+    color: var(--features-green-bg-color);
+    font-size: 14px;
+}
+
+.footer .links a{
+    color: var(--footer-text-color);
+    font-size: 14px;
+}
+
+.footer input,.footer textarea{
+    border: 0px;
+    font-size: 14px;
+    background-color: var(--footer-bg-color) !important;
+    color: var(--footer-text-color) !important;
+}
+
+input:focus, textarea:focus{
+    outline: none !important;
+}
+
+.footer button{
+    color: white;
+    background-color: var(--features-green-bg-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer button:hover{
+    color: var(--features-green-bg-color);
+    background-color: white;
+}
+
+.copyright{
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+.copyright p{
+    font-size: 12px;
+    margin-bottom: 0;
+}
